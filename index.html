@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Job Application Form</h1>
+    </header>
+    <form id="multi-step-form">
+      <fieldset id="step-1">
+        <section class="form-group">
+          <label for="name-text" id="name"
+            >Name:
+            <input
+              type="text"
+              id="name-text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label for="email-text" id="email"
+            >Email:
+            <input
+              type="email"
+              id="email-text"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+        </section>
+        <button type="button" id="next-1">Next -></button>
+        <span class="error" id="step1-error"></span>
+      </fieldset>
+      <fieldset id="step-2" style="display: none">
+        <section class="form-group">
+          <label for="portfolio-url-input" id="portfolio-url"
+            >Portfolio Url:
+            <input
+              type="url"
+              id="portfolio-url-input"
+              placeholder="Add your link"
+              required
+            />
+          </label>
+          <label for="github-url-input" id="github-url"
+            >GitHub Url
+            <input
+              type="url"
+              id="github-url-input"
+              placeholder="Enter you GitHub link"
+              required
+            />
+          </label>
+        </section>
+        <button type="button" id="back-1"><- Back</button>
+        <button type="button" id="next-2">Next -></button>
+        <span class="error" id="step2-error"></span>
+      </fieldset>
+      <fieldset id="step-3" style="display: none">
+        <section class="form-group">
+          <label for="password-input" id="password"
+            >Password:
+            <input
+              type="password"
+              id="password-input"
+              placeholder="Enter your password"
+              required
+            />
+          </label>
+          <label for="confirm-password-input" id="confirm-password"
+            >Confirm Password
+            <input
+              type="password"
+              id="confirm-password-input"
+              placeholder="Re-enter your password"
+              required
+            />
+          </label>
+        </section>
+        <button type="button" id="back-2"><- Back</button>
+        <button type="submit" id="submit-btn">Submit</button>
+        <span class="error" id="step3-error"></span>
+      </fieldset>
+      <p class="success"></p>
+    </form>
+    <script src="./script.js"></script>
+  </body>
 </html>
