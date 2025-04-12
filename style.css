@@ -1,0 +1,74 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+form {
+    width: 75%;
+    margin: auto;
+}
+
+#step-1 {
+    background-color:aquamarine ;
+}
+#step-2 {
+    background-color:rgb(9, 134, 243) ;
+}
+#step-3 {
+    background-color:rgb(7, 84, 228) ;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 100%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 25%;
+}
+
+#next-1:hover, #next-2:hover{
+    background: rgb(0, 191, 255);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#back-1:hover, #back-2:hover{
+    background: rgb(255, 89, 0);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#submit-btn:hover {
+    background: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+input, label {
+    margin-left: 5px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+}
+
+input.error{
+    border: 1px solid red;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
